@@ -23,9 +23,6 @@ abra-o.
 ``` r
 install.packages("usethis")
 usethis::create_package("caminho_ate_o_projeto/nome_do_projeto")
-
-# Exemplo: usethis::create_package("~/Documents/curso-r/MeuCursoDeR")
-# Isso criará o projeto MeuCursoDeR dentro da pasta curso-r/.
 ```
 
 #### Passo 3: Baixar o material

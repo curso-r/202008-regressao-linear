@@ -34,14 +34,10 @@ CursoR::instalar_dependencias()
 
 Faça um projeto do RStudio para usar durante todo o curso e em seguida abra-o.
 
-```{r, eval = FALSE}
+```{r, eval=FALSE}
 install.packages("usethis")
 usethis::create_package("caminho_ate_o_projeto/nome_do_projeto")
-
-# Exemplo: usethis::create_package("~/Documents/curso-r/MeuCursoDeR")
-# Isso criará o projeto MeuCursoDeR dentro da pasta curso-r/.
 ```
-
 
 #### Passo 3: Baixar o material
 
@@ -69,11 +65,13 @@ knitr::kable(
 ## Scripts usados em aula
 
 ```{r, echo = FALSE}
+nome_pasta <- "R/"
 knitr::kable(
   tibble::tibble(
-    script = list.files("scripts/", pattern = ".R"),
-    link = paste0("https://curso-r.github.io/", turma, "/scripts/", script)
+    script = list.files(nome_pasta, pattern = ".R"),
+    link = paste0("https://curso-r.github.io/", turma, "/", nome_pasta, script)
   )
 )
 ```
+
 
