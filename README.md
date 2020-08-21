@@ -41,11 +41,34 @@ CursoR::atualizar_material()
 
 ## Slides
 
-| slide             | link                                                                |
-| :---------------- | :------------------------------------------------------------------ |
-| slides/index.html | <https://curso-r.github.io/main-regressao-linear/slides/index.html> |
+| slide                              | link                                                                                 |
+| :--------------------------------- | :----------------------------------------------------------------------------------- |
+| slides/01-introducao-ao-curso.html | <https://curso-r.github.io/main-regressao-linear/slides/01-introducao-ao-curso.html> |
+| slides/02-regressao-linear.html    | <https://curso-r.github.io/main-regressao-linear/slides/02-regressao-linear.html>    |
 
 ## Scripts usados em aula
 
 | script | link |
 | :----- | :--- |
+
+## Referências
+
+#### Programação em R
+
+  - [Livro da Curso-R (Curso-R)](https://livro.curso-r.com/)
+  - [Tidyverse (Wickham H)](https://www.tidyverse.org/)
+  - [R for Data Science (Wickham H)](https://r4ds.had.co.nz/)
+  - [Advanced R (Wickham H)](https://adv-r.hadley.nz/)
+
+#### Regressão Linear
+
+  - [Introduction to Statistical Learning (Hastie, et
+    al)](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+  - [Elements of Statistical Learning (Hastie, et
+    al)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+  - [Computer Age Statistical Inference (Hastie,
+    Efron)](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf)
+  - [Tidymodels (Kuhn, et al)](https://www.tidymodels.org/)
+  - [Feature Engineering and Selection: A Practical Approach for
+    Predictive Models (Kuhn, Kjell)](http://www.feat.engineering/)
+  - [Kaggle](https://www.kaggle.com/)

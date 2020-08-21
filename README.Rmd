@@ -65,7 +65,7 @@ knitr::kable(
 ## Scripts usados em aula
 
 ```{r, echo = FALSE}
-nome_pasta <- "R/"
+nome_pasta <- "scripts_feitos_em_aula/"
 knitr::kable(
   tibble::tibble(
     script = list.files(nome_pasta, pattern = ".R"),
@@ -74,4 +74,22 @@ knitr::kable(
 )
 ```
 
+## Referências
+
+
+#### Programação em R
+
+- [Livro da Curso-R (Curso-R)](https://livro.curso-r.com/)
+- [Tidyverse (Wickham H)](https://www.tidyverse.org/)
+- [R for Data Science (Wickham H)](https://r4ds.had.co.nz/)
+- [Advanced R (Wickham H)](https://adv-r.hadley.nz/)
+
+#### Regressão Linear
+
+- [Introduction to Statistical Learning (Hastie, et al)](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+- [Elements of Statistical Learning (Hastie, et al)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+- [Computer Age Statistical Inference (Hastie, Efron)](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf)
+- [Tidymodels (Kuhn, et al)](https://www.tidymodels.org/)
+- [Feature Engineering and Selection: A Practical Approach for Predictive Models (Kuhn, Kjell)](http://www.feat.engineering/)
+- [Kaggle](https://www.kaggle.com/)
 
