@@ -48,8 +48,9 @@ CursoR::atualizar_material()
 
 ## Scripts usados em aula
 
-| script | link |
-| :----- | :--- |
+| script                            | link                                                                                                         |
+| :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| 01-exercicios-durante-a-aula1.Rmd | <https://curso-r.github.io/202008-regressao-linear/scripts_feitos_em_aula/01-exercicios-durante-a-aula1.Rmd> |
 
 ## Referências
 
