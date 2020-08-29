@@ -92,4 +92,7 @@ knitr::kable(
 - [Tidymodels (Kuhn, et al)](https://www.tidymodels.org/)
 - [Feature Engineering and Selection: A Practical Approach for Predictive Models (Kuhn, Kjell)](http://www.feat.engineering/)
 - [Kaggle](https://www.kaggle.com/)
-
+- [Livro do Gilberto Paula](https://www.ime.usp.br/~giapaula/texto_2013.pdf)
+- Estatística básica 7a edição - BUSSAB e MORETTIN
+- [Tese sobre Regressão Linear da Sandra Rodrigues](https://ubibliorum.ubi.pt/bitstream/10400.6/1869/1/Tese%20Sandra%20Rodrigues.pdf)
+- [Aplicação de Regressão Linear Simples](https://www.ime.usp.br/~giapaula/slides_exemplo_cfoguete.pdf)
