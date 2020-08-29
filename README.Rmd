@@ -96,3 +96,4 @@ knitr::kable(
 - Estatística básica 7a edição - BUSSAB e MORETTIN
 - [Tese sobre Regressão Linear da Sandra Rodrigues](https://ubibliorum.ubi.pt/bitstream/10400.6/1869/1/Tese%20Sandra%20Rodrigues.pdf)
 - [Aplicação de Regressão Linear Simples](https://www.ime.usp.br/~giapaula/slides_exemplo_cfoguete.pdf)
+- [Introduction to Econometrics with R](https://www.econometrics-with-r.org/6-5-the-distribution-of-the-ols-estimators-in-multiple-regression.html)
