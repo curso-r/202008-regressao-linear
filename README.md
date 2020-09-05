@@ -51,6 +51,8 @@ CursoR::atualizar_material()
 | script                            | link                                                                                                         |
 | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | 01-exercicios-durante-a-aula1.Rmd | <https://curso-r.github.io/202008-regressao-linear/scripts_feitos_em_aula/01-exercicios-durante-a-aula1.Rmd> |
+| 01-exercicios-durante-a-aula2.Rmd | <https://curso-r.github.io/202008-regressao-linear/scripts_feitos_em_aula/01-exercicios-durante-a-aula2.Rmd> |
+| 03-interacoes.R                   | <https://curso-r.github.io/202008-regressao-linear/scripts_feitos_em_aula/03-interacoes.R>                   |
 
 ## Referências
 

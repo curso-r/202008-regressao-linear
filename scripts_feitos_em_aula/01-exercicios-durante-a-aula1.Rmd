@@ -35,8 +35,12 @@ library(tidyverse)
 ```{r}
 # cars
 glimpse(cars)
-ggplot(cars) + 
+grafico_muito_pesado <- ggplot(cars) + 
   geom_point(aes(x = speed, y = dist))
+
+# saveRDS(grafico_muito_pesado, file = "grafico_muito_pesado.rds")
+grafico_muito_pesado <- readRDS("grafico_muito_pesado.rds")
+grafico_muito_pesado
 ```
 
 ## ajuste de uma regressão linear simples
@@ -193,7 +197,10 @@ summary(modelo_balance)
 Calcule as médias de `Balance` para cada `Gender`. Compare os resultados com o exercício anterior.
 
 ```{r}
+media_f <- mean(Credit$Balance[Credit$Gender == "Female"])
+media_m <- mean(Credit$Balance[Credit$Gender == " Male"])
 
+media_m - media_f
 ```
 
 
@@ -202,7 +209,14 @@ Calcule as médias de `Balance` para cada `Gender`. Compare os resultados com o 
 Explore como usar a função model.matrix(). Use a função `model.matrix()` no lugar de `lm()` do exercício 8 e veja sua saída.
 
 ```{r}
+model.matrix(Balance ~ Gender, data = Credit) %>% head()
+Credit %>% select(Balance, Gender)
 
+y = b0*1 + b1*0 = b0
+
+
+
+y = b0*1 + b1*1 = 509 + 19
 ```
 
 
@@ -211,7 +225,22 @@ Explore como usar a função model.matrix(). Use a função `model.matrix()` no 
 Repita os exercícios 8, 9 e 10, mas agora usando Ethnicity no lugar de Gender.
 
 ```{r}
+modelo_balance <- lm(Balance ~ Ethnicity, data = Credit)
+summary(modelo_balance)
+```
 
+```{r}
+Credit %>%
+  group_by(Ethnicity) %>%
+  summarise(
+    media = mean(Balance)
+  )
+531.0000	+ (0)
+531.0000	+ (0)
+```
+```{r}
+
+model.matrix(Balance ~ Ethnicity, data = Credit) %>% head()
 ```
 
 
@@ -251,11 +280,15 @@ Use `lm()` para ajustar os seguintes modelos:
 Avalie qual modelo é melhor quanto ao EQM e quanto ao R^2.
 
 ```{r}
-modelo_lin <- 
-modelo_log <- 
+y_x$log_x <- log(y_x$x)
+
+modelo_lin <- lm(y ~ x, data = y_x)
+modelo_log <- lm(y ~ BoxCox(x), data = y_x)
 
 summary(modelo_log)
 summary(modelo_lin)
+
+plot(modelo_lin)
 ```
 
 
@@ -281,29 +314,32 @@ d) `y ~ poly(x, 3, raw = TRUE)`
 ```{r}
 # Resolução do item a)
 a_mm <- model.matrix(y ~ x, data = y_x_poly)
-a_lm <- model.matrix(y ~ x, data = y_x_poly)
+a_lm <- lm(y ~ x, data = y_x_poly)
 summary(a_lm)
 ```
 
 ```{r}
 # Item b)
-b_mm <- 
-b_lm <-
+b_mm <-  model.matrix(y ~ poly(x, 2, raw = TRUE), data = y_x_poly)
+b_lm <-  lm(y ~ poly(x, 2, raw = TRUE), data = y_x_poly)
 summary(b_lm)
+head(b_mm)
 ```
 
 ```{r}
 # Item c)
-c_mm <- 
-c_lm <-
+c_mm <- model.matrix(y ~ x + I(x^2) + I(x^3) , data = y_x_poly)
+c_lm <- lm(y ~ x + I(x^2) + I(x^3), data = y_x_poly)
 summary(c_lm)
 ```
 
 ```{r}
 # Item d)
-d_mm <- 
-d_lm <-
+d_mm <- model.matrix(y ~ poly(x, 3, raw = TRUE), data = y_x_poly)
+d_lm <- lm(y ~ poly(x, 3, raw = TRUE), data = y_x_poly)
 summary(d_lm)
+
+head(d_mm)
 ```
 
 Compare o número de parâmetros com o número de colunas. Qual conclusão?
